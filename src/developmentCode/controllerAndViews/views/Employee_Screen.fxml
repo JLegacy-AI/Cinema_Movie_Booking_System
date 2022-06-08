@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="developmentCode.controllerAndViews.EmployeeScreenController">
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button onMouseClicked="#backToSignIn" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Log Out" />
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinemato">
+               <font>
+                  <Font name="Bauhaus 93" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane  prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <left>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button onMouseClicked="#ticketsUploads" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Tickets" />
+                  <Button onMouseClicked="#userUploads" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Users" />
+                  <Button onMouseClicked="#moviesUploads" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Movies" />
+                  <Button onMouseClicked="#discountUploads" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Discount" />
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox fx:id="manipulatorBP" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>
